@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: kitt kk, MCUVILLATE, LIC=QF830-B5VA7-CXRU6-DKBUX-KSD4A-P2YD0
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.21a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+E:\MCUVillatge\02_R&DProduct Design\02_GPV\TP(TechnicalPanel)\SCM_TP\02_Slave\01_App_SCM_Slave_Module\Tools\App_SCM_Slave.uvproj
+Project File Date:  08/21/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'App_SCM_Slave_Module'
+compiling iohandler.c...
+..\Appl\monitorcontrol\iohandler.c(211): warning:  #177-D: variable "bit" was declared but never referenced
+  	uint16_t 	bit = 0x0;
+..\Appl\monitorcontrol\iohandler.c: 1 warning, 0 errors
+compiling slave_ctrl.c...
+..\Appl\slavecontrol\slave_ctrl.c(351): warning:  #177-D: variable "p_data" was declared but never referenced
+  	uint32_t *p_data = NULL;
+..\Appl\slavecontrol\slave_ctrl.c: 1 warning, 0 errors
+compiling Appl.c...
+..\Appl\main\Appl.c(126): warning:  #177-D: variable "btest" was declared but never referenced
+  	uint8_t  btest = 0;
+..\Appl\main\Appl.c: 1 warning, 0 errors
+compiling Side_Mod.c...
+compiling Vault_Mod.c...
+compiling CAB_Mod.c...
+compiling Rear_Mod.c...
+..\Appl\slavecontrol\Rear_Mod.c(65): warning:  #177-D: variable "uC_Input" was declared but never referenced
+  	uint8_t uC_Input = 0;
+..\Appl\slavecontrol\Rear_Mod.c: 1 warning, 0 errors
+compiling commandctrl.c...
+..\Appl\canbuscontrol\commandctrl.c(175): warning:  #177-D: variable "i" was declared but never referenced
+  	uint8_t i = 0;
+..\Appl\canbuscontrol\commandctrl.c: 1 warning, 0 errors
+linking...
+Program Size: Code=7092 RO-data=936 RW-data=168 ZI-data=5676  
+FromELF: creating hex file...
+After Build - User command #1: .\Objects\Con_Hex2Bin.exe .\Objects\App_SCM_Slave.hex .\Objects\00_BIN_Release\App_Slave_M.bin 32768
+======= .HEX TO .BIN V2 =========
+Con_Hex2Bin.exe  [HEX.hex]  [BIN.bin]  [SIZE]
+.\Objects\App_SCM_Slave.hex  .\Objects\00_BIN_Release\App_Slave_M.bin 32768
+=======
+======= End =========
+".\Objects\App_SCM_Slave.axf" - 0 Error(s), 5 Warning(s).
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
